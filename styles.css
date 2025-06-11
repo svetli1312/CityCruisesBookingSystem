@@ -1,0 +1,527 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Header Wrapper */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header Title */
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #62007a;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+    border-radius: 10px;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    background-color: #00f7ff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #005B99;
+}
+
+/* Yachts Section */
+.yachts {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.yachts h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.yacht-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.yacht-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yacht-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.yacht-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.yacht-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.yacht-card p {
+    font-size: 1rem;
+    color: #666;
+    padding-bottom: 5px;
+}
+
+.yacht-card a {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.yacht-card a:hover {
+    background-color: #005B99;
+}
+
+/* Booking Form Section */
+#booking-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+#booking-form h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#booking-form label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#booking-form input, 
+#booking-form select,
+#booking-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#booking-form button {
+    background-color: #003366;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#booking-form button:hover {
+    background-color: #005B99;
+}
+
+/* Success/Error Message */
+.success {
+    color: #28a745;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Chatbot container */
+.chatbot {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#chat-log {
+    max-height: 400px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* Chat message styles */
+.chat-message {
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-radius: 25px;
+    max-width: 70%;
+}
+
+.chat-message.user {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chat-message.bot {
+    background-color: #2196F3;
+    color: white;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+#chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+#query {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
+
+#query:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1976D2;
+}
+
+/* Add styles for the clear button */
+.btn-clear {
+    background-color: #f44336;  /* Red background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-clear:hover {
+    background-color: #e53935;  /* Darker red on hover */
+}
+
+/* Contact form section */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+.success {
+    color: #27ae60;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .feature h3 {
+        font-size: 1.2rem;
+    }
+
+    .cta .btn {
+        font-size: 1rem;
+    }
+
+    .yacht-card h3 {
+        font-size: 1.2rem;
+    }
+
+    #booking-form h2 {
+        font-size: 1.5rem;
+    }
+
+    #booking-form input, 
+    #booking-form select,
+    #booking-form button {
+        font-size: 1rem;
+    }
+}
